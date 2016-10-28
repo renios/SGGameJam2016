@@ -462,7 +462,7 @@ ParticleSystem:
       minMaxState: 0
     randomizeRotationDirection: 0
     gravityModifier: 0
-    maxNumParticles: 1
+    maxNumParticles: 2
     size3D: 0
     rotation3D: 0
   ShapeModule:
