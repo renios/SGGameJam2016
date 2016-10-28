@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
 
 	void Update()
 	{
+		CameraMoving ();
 		MovingKeyInput ();
 		MoveToOppositeSide ();
 		MoveByStair ();
@@ -110,6 +111,24 @@ public class PlayerController : MonoBehaviour
 		if(Input.GetKeyDown(KeyCode.R))
 		{
 			GetComponent<Transform>().position = StartPoint;
+		}
+	}
+
+	void CameraMoving()
+	{
+		Vector3 CamPos;
+		Vector3 PlayerPos;
+
+		PlayerPos = GetComponent<Transform> ().position;
+		CamPos = Camera.GetComponent<Transform> ().position;
+
+		if (PlayerPos.x - CamPos.x > 2.5)
+		{
+			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x + 0.1f, CamPos.y, CamPos.z);
+		}
+		else if (PlayerPos.x - CamPos.x < -2.5)
+		{
+			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x - 0.1f, CamPos.y, CamPos.z);
 		}
 	}
 }
