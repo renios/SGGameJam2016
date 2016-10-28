@@ -4,7 +4,9 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
 	public float PlayerSpeed;
-	private bool IsOppositeSide;
+
+	public bool IsOppositeSide;
+
 
 	void Start()
 	{
@@ -49,4 +51,6 @@ public class PlayerController : MonoBehaviour
 			}
 		}
 	}
+
+
 }
