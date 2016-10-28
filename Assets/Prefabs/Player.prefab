@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012866843414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.55, y: 2.67, z: 0}
+  m_LocalPosition: {x: 1.92, y: 8.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -71,9 +71,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.00000011920929, y: -0.10940361}
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 2.5}
+  m_Size: {x: 0.83482885, y: 2.2286806}
 --- !u!114 &114000011733729742
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -86,6 +86,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerSpeed: 3
+  StairHeight: 0
+  StairWidth: 0
+  IsOppositeSide: 0
+  IsGetStair: 0
 --- !u!212 &212000011885028738
 SpriteRenderer:
   m_ObjectHideFlags: 1
