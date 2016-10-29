@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
 	public bool IsOppositeSide;
 	public bool IsGetStair;
 	public bool IsGetDoor;
+	public bool GoRight;
+	public bool GoLeft;
 
 	private Vector3 StartPoint;
 
@@ -28,7 +30,8 @@ public class PlayerController : MonoBehaviour
 	void Update()
 	{
 		CameraMoving ();
-		MovingKeyInput ();
+		MovingInput ();
+		Move ();
 		MoveToOppositeSide ();
 		MoveByStair ();
 
@@ -40,14 +43,44 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
-	void MovingKeyInput ()
+	void MovingInput()
 	{
-		if ((Input.GetKey(KeyCode.RightArrow) && IsOppositeSide == false) || (Input.GetKey(KeyCode.LeftArrow) && IsOppositeSide == true))
+		if (Input.GetMouseButton(0) == true)
+		{
+			float MousePosX;
+			float MousePosY;
+
+			MousePosX = Input.mousePosition.x;
+			MousePosY = Input.mousePosition.y;
+
+			if (MousePosX > 540)
+			{
+				GoRight = true;
+				GoLeft = false;
+				Debug.Log (GoRight);
+			}
+			else
+			{
+				GoRight = false;
+				GoLeft = true;
+				Debug.Log (GoLeft);
+			}
+		}
+		else
+		{
+			GoRight = false;
+			GoLeft = false;
+		}
+	}
+
+	void Move ()
+	{
+		if (GoRight && (IsOppositeSide == false) || (GoLeft && IsOppositeSide == true))
 		{
 			GetComponent<Transform> ().rotation = new Quaternion (0, 0, 0, GetComponent<Transform> ().rotation.w);
 			GetComponent<Transform>().position = new Vector3(GetComponent<Transform>().position.x + 0.1f, GetComponent<Transform>().position.y, 0);
 		}
-		else if ((Input.GetKey(KeyCode.RightArrow) && IsOppositeSide == true) || (Input.GetKey(KeyCode.LeftArrow) && IsOppositeSide == false))
+		else if (GoRight && (IsOppositeSide == true) || (GoLeft && IsOppositeSide == false))
 		{
 			GetComponent<Transform> ().rotation = new Quaternion (0, 180, 0, GetComponent<Transform> ().rotation.w);
 			GetComponent<Transform>().position = new Vector3(GetComponent<Transform>().position.x - 0.1f, GetComponent<Transform>().position.y, 0);
