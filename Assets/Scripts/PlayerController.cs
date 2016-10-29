@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
 	public Camera Camera;
 	public Transform CamTargetPoint;
+	public GameObject LeftGroundChecker;
+	public GameObject RightGroundChecker;
 
 	public float StairHeight;
 	public float StairWidth;
@@ -35,26 +37,29 @@ public class PlayerController : MonoBehaviour
 
 	void Update()
 	{
-		if (IsRotateOctahedral == false)
+		if ((LeftGroundChecker.GetComponent<LeftGroundCheck> ().IsLeftOnGround == true) || (RightGroundChecker.GetComponent<RightGroundCheck> ().IsRightOnGround == true))
 		{
-			CameraMoving ();
-			MovingInput ();
-			Move ();
-			MoveToOppositeSide ();
-			MoveByStair ();
-
-			Restart ();
-
-			if (IsGetDoor == true && Input.GetKeyDown(KeyCode.UpArrow))
+			if ((IsRotateOctahedral == false))
 			{
-				IfArriveToDoor ();
-			}
-		}
+				CameraMoving ();
+				MovingInput ();
+				Move ();
+				MoveToOppositeSide ();
+				MoveByStair ();
 
-		else
-		{
-			float step = CamSpeed * Time.deltaTime;
-			Camera.GetComponent<Transform> ().position = Vector3.MoveTowards (Camera.GetComponent<Transform> ().position, CamTargetPoint.position, step);
+				Restart ();
+
+				if (IsGetDoor == true && Input.GetKeyDown(KeyCode.UpArrow))
+				{
+					IfArriveToDoor ();
+				}
+			}
+
+			else
+			{
+				float step = CamSpeed * Time.deltaTime;
+				Camera.GetComponent<Transform> ().position = Vector3.MoveTowards (Camera.GetComponent<Transform> ().position, CamTargetPoint.position, step);
+			}
 		}
 	}
 
