@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
 	public Camera MainCamera;
-	public Transform CamTargetPoint;
 	public GameObject LeftGroundChecker;
 	public GameObject RightGroundChecker;
 	public GameObject RotateAnimation;
@@ -17,6 +16,7 @@ public class PlayerController : MonoBehaviour
 	public bool IsOppositeSide; // true -> small, false -> big
 	public bool IsGetStair;
 	public bool IsGetDoor;
+	public bool IsOnPrism;
 	public bool GoRight;
 	public bool GoLeft;
 	public bool WinGame;
@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
 
 	private Vector3 StartPoint;
 	private Vector3 TargetPos;
+	private Vector3 CamPos;
+	private Quaternion CamRot;
 
     SoundManager soundManager;
 
@@ -43,6 +45,9 @@ public class PlayerController : MonoBehaviour
 
 	void Update()
 	{
+		CamPos = MainCamera.GetComponent<Transform> ().position;
+		CamRot = MainCamera.GetComponent<Transform> ().rotation;
+
 		if ((LeftGroundChecker.GetComponent<LeftGroundCheck> ().IsLeftOnGround == true) || (RightGroundChecker.GetComponent<RightGroundCheck> ().IsRightOnGround == true))
 		{
 			if ((IsRotateOctahedral == false) && (WinGame == false))
@@ -61,40 +66,25 @@ public class PlayerController : MonoBehaviour
 					IsGetDoor = false;
 				}
 			}
-
-			else
-			{
-				//float step = CamSpeed * Time.deltaTime;
-				//Camera.GetComponent<Transform> ().position = Vector3.MoveTowards (Camera.GetComponent<Transform> ().position, CamTargetPoint.position, step);
-			}
 		}
 	}
 
 	void MovingInput()
 	{
-		if (Input.GetMouseButton(0) == true)
+		if (Input.GetKey (KeyCode.RightArrow))
 		{
-			float MousePosX;
-			float MousePosY;
-
-			MousePosX = Input.mousePosition.x;
-			MousePosY = Input.mousePosition.y;
-
-			if (MousePosX > 540)
-			{
-				GoRight = true;
-				GoLeft = false;
-			}
-			else
-			{
-				GoRight = false;
-				GoLeft = true;
-			}
+			GoRight = true;
+			GoLeft = false;
+		}
+		else if (Input.GetKey (KeyCode.LeftArrow))
+		{
+			GoLeft = true;
+			GoRight = false;
 		}
 		else
 		{
-			GoRight = false;
 			GoLeft = false;
+			GoRight = false;
 		}
 	}
 
@@ -120,13 +110,8 @@ public class PlayerController : MonoBehaviour
 	{
 		if (Input.GetKeyDown (KeyCode.Z))
 		{
-			Vector3 CamPos;
-			Quaternion CamRot;
-
             soundManager.PlaySE("Rotate");
-            CamPos = MainCamera.GetComponent<Transform> ().position;
-			CamRot = MainCamera.GetComponent<Transform> ().rotation;
-
+            
 			IsRotateOctahedral = true;
 
 			RotateAnimation.SetActive (true);
@@ -134,8 +119,6 @@ public class PlayerController : MonoBehaviour
 			RotateAnimation.SetActive (false);
 
 			IsRotateOctahedral = false;
-
-            
 
 			if (IsOppositeSide == false)
 			{
@@ -153,6 +136,25 @@ public class PlayerController : MonoBehaviour
 				MainCamera.GetComponent<Transform> ().rotation = new Quaternion (CamRot.x, 0, CamRot.z, CamRot.w);
 				IsOppositeSide = false;
 				UnfixAllPrism();
+			}
+		}
+	}
+
+	void WalkOnPrsim()
+	{
+		IsOnPrism = RightGroundChecker.GetComponent<RightGroundCheck> ().IsRightOnPrism;
+		if ((IsOppositeSide == true) && (IsOnPrism == true))
+		{
+			GetComponent<Rigidbody2D> ().Sleep ();
+			GetComponent<BoxCollider2D> ().enabled = false;
+			if (GoLeft == true)
+			{
+				GetComponent<Transform> ().position = new Vector3 (GetComponent<Transform> ().position.x - 0.1f, GetComponent<Transform> ().position.y + 0.1f, 0);
+			}
+
+			else if (GoRight == true)
+			{
+				GetComponent<Transform> ().position = new Vector3 (GetComponent<Transform> ().position.x + 0.1f, GetComponent<Transform> ().position.y + 0.1f, 0);
 			}
 		}
 	}
@@ -190,6 +192,22 @@ public class PlayerController : MonoBehaviour
 				GetComponent<BoxCollider2D> ().enabled = true;
 				GetComponent<Rigidbody2D> ().WakeUp ();
 			}
+		}
+	}
+
+	void OnCollisionEnter2D(Collider2D Collsion)
+	{
+		if (Collsion.gameObject.tag == "Prism")
+		{
+			IsOnPrism = true;
+		}
+	}
+
+	void OnCollisionExit2D(Collider2D Collsion)
+	{
+		if (Collsion.gameObject.tag == "Prism")
+		{
+			IsOnPrism = false;
 		}
 	}
 
@@ -232,7 +250,6 @@ public class PlayerController : MonoBehaviour
 
 	void CameraMoving()
 	{
-		Vector3 CamPos;
 		Vector3 PlayerPos;
 
 		PlayerPos = GetComponent<Transform> ().position;
