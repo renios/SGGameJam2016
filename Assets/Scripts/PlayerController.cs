@@ -119,10 +119,9 @@ public class PlayerController : MonoBehaviour
 			CamPos = Camera.GetComponent<Transform> ().position;
 			CamRot = Camera.GetComponent<Transform> ().rotation;
 
-			Camera.orthographicSize = 25;
 			IsRotateOctahedral = true;
 
-			/*			if (IsOppositeSide == false)
+			if (IsOppositeSide == false)
 			{
 				GetComponent<Transform> ().localScale = new Vector3 (0.5f, 0.5f, 1f);
 				Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y, 10);
@@ -136,7 +135,7 @@ public class PlayerController : MonoBehaviour
 				Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y, -10);
 				Camera.GetComponent<Transform> ().rotation = new Quaternion (CamRot.x, 0, CamRot.z, CamRot.w);
 				IsOppositeSide = false;
-			}*/
+			}
 		}
 	}
 
@@ -201,6 +200,15 @@ public class PlayerController : MonoBehaviour
 		else if (PlayerPos.x - CamPos.x < -2)
 		{
 			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x - 0.1f, CamPos.y, CamPos.z);
+		}
+
+		if (PlayerPos.y - CamPos.y > 2)
+		{
+			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y + 0.1f, CamPos.z);
+		}
+		else if (PlayerPos.y - CamPos.y < -2)
+		{
+			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y - 0.1f, CamPos.z);
 		}
 	}
 
