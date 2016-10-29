@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     private bool IsStartStair;
     private bool IsMoveable;
 	public bool IsGetDoor;
+	public bool IsOnPrism;
 	public bool GoRight;
 	public bool GoLeft;
 	public bool WinGame;
@@ -29,6 +30,8 @@ public class PlayerController : MonoBehaviour
 
 	private Vector3 StartPoint;
 	private Vector3 TargetPos;
+	private Vector3 CamPos;
+	private Quaternion CamRot;
 
     SoundManager soundManager;
 
@@ -65,6 +68,9 @@ public class PlayerController : MonoBehaviour
 
 	void Update()
 	{
+		CamPos = MainCamera.GetComponent<Transform> ().position;
+		CamRot = MainCamera.GetComponent<Transform> ().rotation;
+
 		if ((LeftGroundChecker.GetComponent<LeftGroundCheck> ().IsLeftOnGround == true) || (RightGroundChecker.GetComponent<RightGroundCheck> ().IsRightOnGround == true))
 		{
 			if ((IsRotateOctahedral == false) && (WinGame == false))
@@ -99,29 +105,20 @@ public class PlayerController : MonoBehaviour
 
 	void MovingInput()
 	{
-		if (Input.GetMouseButton(0) == true)
+		if (Input.GetKey (KeyCode.RightArrow))
 		{
-			float MousePosX;
-			float MousePosY;
-
-			MousePosX = Input.mousePosition.x;
-			MousePosY = Input.mousePosition.y;
-
-			if (MousePosX > 540)
-			{
-				GoRight = true;
-				GoLeft = false;
-			}
-			else
-			{
-				GoRight = false;
-				GoLeft = true;
-			}
+			GoRight = true;
+			GoLeft = false;
+		}
+		else if (Input.GetKey (KeyCode.LeftArrow))
+		{
+			GoLeft = true;
+			GoRight = false;
 		}
 		else
 		{
-			GoRight = false;
 			GoLeft = false;
+			GoRight = false;
 		}
 	}
 
@@ -322,6 +319,22 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
+	void OnCollisionEnter2D(Collider2D Collsion)
+	{
+		if (Collsion.gameObject.tag == "Prism")
+		{
+			IsOnPrism = true;
+		}
+	}
+
+	void OnCollisionExit2D(Collider2D Collsion)
+	{
+		if (Collsion.gameObject.tag == "Prism")
+		{
+			IsOnPrism = false;
+		}
+	}
+
 	void OnTriggerEnter2D(Collider2D Collider)
 	{
 		if (Collider.gameObject.tag == "Stair")
@@ -359,7 +372,6 @@ public class PlayerController : MonoBehaviour
 
 	void CameraMoving()
 	{
-		Vector3 CamPos;
 		Vector3 PlayerPos;
 
 		PlayerPos = GetComponent<Transform> ().position;
