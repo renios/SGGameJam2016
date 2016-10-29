@@ -192,18 +192,40 @@ public class PlayerController : MonoBehaviour
 	{
 		originalCameraPos = MainCamera.transform.position;
 
-		//Scene 1-1, pos(0,-16.2,-10), size 25.8
 		Vector2 scene1TargerPos = new Vector2(0, -16.2f);
 		float scene1TargetSize = 25.8f;
 
 		Vector2 targetPos;
 		float targetSize;
 
-		// if (SceneManager.GetActiveScene().name == "1-1")
-		// {
+		//Scene 1-1, pos(0, -16.2, -10), size 25.8
+		//Scene 1-2, pos(8.24, -0.8, -10), size 30.5
+		//Scene 1-5, pos(-0.12, 1.74, -10), size 38.4
+
+		if (SceneManager.GetActiveScene().name == "1-1")
+		{
+			scene1TargerPos = new Vector2(0, -16.2f);
+			scene1TargetSize = 25.8f;
+
 			targetPos = scene1TargerPos;
 			targetSize = scene1TargetSize;
-		// }
+		}
+		else if (SceneManager.GetActiveScene().name == "1-2") 
+		{
+			scene1TargerPos = new Vector2(8.24f, -0.8f);
+			scene1TargetSize = 30.5f;
+
+			targetPos = scene1TargerPos;
+			targetSize = scene1TargetSize;
+		}
+		else 
+		{
+			scene1TargerPos = new Vector2(-0.12f, 1.74f);
+			scene1TargetSize = 38.4f;
+
+			targetPos = scene1TargerPos;
+			targetSize = scene1TargetSize;
+		}
 
 		Vector2 currentPos = MainCamera.gameObject.transform.position;
 		Vector2 deltaPos = targetPos - currentPos;
