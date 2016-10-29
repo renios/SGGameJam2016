@@ -293,6 +293,7 @@ public class PlayerController : MonoBehaviour
 				if (soundManager != null)
 	                soundManager.PlaySE("Warp");
                 IsStartStair = true;
+                GetComponent<SpriteRenderer>().enabled = false;
             }
 			float step = 3 * Time.deltaTime;
 			GetComponent<Transform>().position = Vector3.MoveTowards(GetComponent<Transform>().position, TargetPos, step);
@@ -305,7 +306,8 @@ public class PlayerController : MonoBehaviour
                 IsStartStair = false;
 				GetComponent<BoxCollider2D> ().enabled = true;
 				GetComponent<Rigidbody2D> ().WakeUp ();
-			}
+                GetComponent<SpriteRenderer>().enabled = true;
+            }
 		}
 	}
 
@@ -313,10 +315,8 @@ public class PlayerController : MonoBehaviour
 	{
 		if (Collider.gameObject.tag == "Stair")
 		{
-			StairHeight = Collider.gameObject.GetComponent<StairInfo> ().StairHeight;
-			StairWidth = Collider.gameObject.GetComponent<StairInfo> ().StairWidth;
 			IsGetStair = true;
-			TargetPos = new Vector3 (GetComponent<Transform>().position.x + StairWidth, GetComponent<Transform>().position.y + StairHeight, 0);
+			TargetPos = Collider.transform.GetChild(0).transform.position;
 		}
 
 		else if (Collider.gameObject.tag == "Door")
