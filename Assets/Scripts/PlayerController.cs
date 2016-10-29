@@ -23,11 +23,15 @@ public class PlayerController : MonoBehaviour
 	public bool IsRotateOctahedral;
 
 	private Vector3 StartPoint;
+	private Vector3 TargetPos;
+
+    SoundManager soundManager;
 
 	void Start()
 	{
 		StartPoint = new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y, 0);
 		RotateAnimation.SetActive (false);
+        soundManager = FindObjectOfType<SoundManager>();
 
 		IsOppositeSide = false;
 		IsRotateOctahedral = false;
@@ -41,7 +45,7 @@ public class PlayerController : MonoBehaviour
 	{
 		if ((LeftGroundChecker.GetComponent<LeftGroundCheck> ().IsLeftOnGround == true) || (RightGroundChecker.GetComponent<RightGroundCheck> ().IsRightOnGround == true))
 		{
-			if ((IsRotateOctahedral == false))
+			if ((IsRotateOctahedral == false) && (WinGame == false))
 			{
 				CameraMoving ();
 				MovingInput ();
@@ -60,8 +64,8 @@ public class PlayerController : MonoBehaviour
 
 			else
 			{
-				float step = CamSpeed * Time.deltaTime;
-				Camera.GetComponent<Transform> ().position = Vector3.MoveTowards (Camera.GetComponent<Transform> ().position, CamTargetPoint.position, step);
+				//float step = CamSpeed * Time.deltaTime;
+				//Camera.GetComponent<Transform> ().position = Vector3.MoveTowards (Camera.GetComponent<Transform> ().position, CamTargetPoint.position, step);
 			}
 		}
 	}
@@ -119,7 +123,8 @@ public class PlayerController : MonoBehaviour
 			Vector3 CamPos;
 			Quaternion CamRot;
 
-			CamPos = Camera.GetComponent<Transform> ().position;
+            soundManager.PlaySE("Rotate");
+            CamPos = Camera.GetComponent<Transform> ().position;
 			CamRot = Camera.GetComponent<Transform> ().rotation;
 
 			IsRotateOctahedral = true;
@@ -129,6 +134,8 @@ public class PlayerController : MonoBehaviour
 			RotateAnimation.SetActive (false);
 
 			IsRotateOctahedral = false;
+
+            
 
 			if (IsOppositeSide == false)
 			{
@@ -172,10 +179,17 @@ public class PlayerController : MonoBehaviour
 	{
 		if (IsGetStair == true)
 		{
-			Vector3 TargetPos = new Vector3 (GetComponent<Transform>().position.x + StairWidth, GetComponent<Transform>().position.y + StairHeight, 0);
 			float step = 3 * Time.deltaTime;
 			GetComponent<Transform>().position = Vector3.MoveTowards(GetComponent<Transform>().position, TargetPos, step);
-			IsGetStair = false;
+			GetComponent<BoxCollider2D> ().enabled = false;
+			GetComponent<Rigidbody2D> ().Sleep ();
+
+			if(GetComponent<Transform>().position.y >= TargetPos.y)
+			{
+				IsGetStair = false;
+				GetComponent<BoxCollider2D> ().enabled = true;
+				GetComponent<Rigidbody2D> ().WakeUp ();
+			}
 		}
 	}
 
@@ -186,6 +200,7 @@ public class PlayerController : MonoBehaviour
 			StairHeight = Collider.gameObject.GetComponent<StairInfo> ().StairHeight;
 			StairWidth = Collider.gameObject.GetComponent<StairInfo> ().StairWidth;
 			IsGetStair = true;
+			TargetPos = new Vector3 (GetComponent<Transform>().position.x + StairWidth, GetComponent<Transform>().position.y + StairHeight, 0);
 		}
 
 		else if (Collider.gameObject.tag == "Door")
@@ -198,7 +213,7 @@ public class PlayerController : MonoBehaviour
 	{
 		if (Collider.gameObject.tag == "Stair")
 		{
-			IsGetStair = false;
+			//IsGetStair = false;
 		}
 
 		else if (Collider.gameObject.tag == "Door")

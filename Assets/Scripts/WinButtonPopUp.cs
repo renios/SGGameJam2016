@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class WinButtonPopUp : MonoBehaviour
 {
-	public GameObject NextStage;
+	public GameObject Complete;
 
 	private GameObject Player;
 
@@ -21,16 +21,14 @@ public class WinButtonPopUp : MonoBehaviour
 	{
 		if (Player.GetComponent<PlayerController> ().WinGame == true)
 		{
-			NextStage.SetActive (true);
+			Complete.SetActive (true);
 		}
 		else
-			NextStage.SetActive (false);
+			Complete.SetActive (false);
 	}
 
-	public void MoveToNextStage()
+	public void MoveToStageSelect()
 	{
-		Debug.Log (SceneManager.GetActiveScene ());
-		Debug.Log (SceneManager.GetActiveScene ().buildIndex);
-		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
+		SceneManager.LoadScene ("StageSelect");
 	}
 }
