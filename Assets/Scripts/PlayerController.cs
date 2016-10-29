@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-	public Camera Camera;
+	public Camera MainCamera;
 	public Transform CamTargetPoint;
 	public GameObject LeftGroundChecker;
 	public GameObject RightGroundChecker;
@@ -124,8 +124,8 @@ public class PlayerController : MonoBehaviour
 			Quaternion CamRot;
 
             soundManager.PlaySE("Rotate");
-            CamPos = Camera.GetComponent<Transform> ().position;
-			CamRot = Camera.GetComponent<Transform> ().rotation;
+            CamPos = MainCamera.GetComponent<Transform> ().position;
+			CamRot = MainCamera.GetComponent<Transform> ().rotation;
 
 			IsRotateOctahedral = true;
 
@@ -140,8 +140,8 @@ public class PlayerController : MonoBehaviour
 			if (IsOppositeSide == false)
 			{
 				GetComponent<Transform> ().localScale = new Vector3 (0.5f, 0.5f, 1f);
-				Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y, 10);
-				Camera.GetComponent<Transform> ().rotation = new Quaternion (CamRot.x, 180, CamRot.z, CamRot.w);
+				MainCamera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y, 10);
+				MainCamera.GetComponent<Transform> ().rotation = new Quaternion (CamRot.x, 180, CamRot.z, CamRot.w);
 				IsOppositeSide = true;
 				FixAllPrism();
 			}
@@ -149,8 +149,8 @@ public class PlayerController : MonoBehaviour
 			{
 				GetComponent<Transform> ().localScale = new Vector3 (1f, 1f, 1f);
 				GetComponent<Transform>().position = new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y + 1, 0);
-				Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y, -10);
-				Camera.GetComponent<Transform> ().rotation = new Quaternion (CamRot.x, 0, CamRot.z, CamRot.w);
+				MainCamera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y, -10);
+				MainCamera.GetComponent<Transform> ().rotation = new Quaternion (CamRot.x, 0, CamRot.z, CamRot.w);
 				IsOppositeSide = false;
 				UnfixAllPrism();
 			}
@@ -236,24 +236,23 @@ public class PlayerController : MonoBehaviour
 		Vector3 PlayerPos;
 
 		PlayerPos = GetComponent<Transform> ().position;
-		CamPos = Camera.GetComponent<Transform> ().position;
 
 		if (PlayerPos.x - CamPos.x > 2)
 		{
-			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x + 0.1f, CamPos.y, CamPos.z);
+			MainCamera.GetComponent<Transform> ().position = new Vector3 (CamPos.x + 0.1f, CamPos.y, CamPos.z);
 		}
 		else if (PlayerPos.x - CamPos.x < -2)
 		{
-			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x - 0.1f, CamPos.y, CamPos.z);
+			MainCamera.GetComponent<Transform> ().position = new Vector3 (CamPos.x - 0.1f, CamPos.y, CamPos.z);
 		}
 
 		if (PlayerPos.y - CamPos.y > 2)
 		{
-			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y + 0.1f, CamPos.z);
+			MainCamera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y + 0.1f, CamPos.z);
 		}
 		else if (PlayerPos.y - CamPos.y < -2)
 		{
-			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y - 0.1f, CamPos.z);
+			MainCamera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y - 0.1f, CamPos.z);
 		}
 	}
 
