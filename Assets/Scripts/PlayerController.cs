@@ -4,7 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-	public Camera Camera;
+	public Camera MainCamera;
+	public Camera SubCamera;
 	public Transform CamTargetPoint;
 	public GameObject LeftGroundChecker;
 	public GameObject RightGroundChecker;
@@ -22,6 +23,8 @@ public class PlayerController : MonoBehaviour
 	public bool GoLeft;
 	public bool WinGame;
 	public bool IsRotateOctahedral;
+	public Vector3 originalCameraPos;
+	public SpriteRenderer transBgRenderer;
 
 	private Vector3 StartPoint;
 	private Vector3 TargetPos;
@@ -40,6 +43,20 @@ public class PlayerController : MonoBehaviour
 		WinGame = false;
 		StairHeight = 0;
 		StairWidth = 0;
+
+		StartCoroutine(InitializeCamera());
+	}
+
+	IEnumerator InitializeCamera()
+	{
+		float deltasize = 9.6f - MainCamera.orthographicSize;
+
+		for (int i = 0; i < 60; i++)
+		{
+			MainCamera.orthographicSize += deltasize/60f;
+			transBgRenderer.color -= new Color(0,0,0,1f/60f);
+			yield return new WaitForSeconds(0.02f);
+		}
 	}
 
 	void Update()
@@ -126,36 +143,104 @@ public class PlayerController : MonoBehaviour
 
 			if (soundManager != null)
             	soundManager.PlaySE("Rotate");
-            CamPos = Camera.GetComponent<Transform> ().position;
-			CamRot = Camera.GetComponent<Transform> ().rotation;
+            CamPos = MainCamera.GetComponent<Transform> ().position;
+			CamRot = MainCamera.GetComponent<Transform> ().rotation;
 
 			IsRotateOctahedral = true;
 
+			yield return StartCoroutine(ZoomOutMainCamera());
+
+			SubCamera.gameObject.SetActive(true);
+			MainCamera.gameObject.SetActive(false);
 			RotateAnimation.SetActive (true);
 			yield return new WaitForSeconds (5f);
+			MainCamera.gameObject.SetActive(true);
+			SubCamera.gameObject.SetActive(false);
 			RotateAnimation.SetActive (false);
-
-			IsRotateOctahedral = false;
-
-            
 
 			if (IsOppositeSide == false)
 			{
-				GetComponent<Transform> ().localScale = new Vector3 (0.5f, 0.5f, 1f);
-				Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y, 10);
-				Camera.GetComponent<Transform> ().rotation = new Quaternion (CamRot.x, 180, CamRot.z, CamRot.w);
+				Vector3 currentLocalScale = GetComponent<Transform> ().localScale;
+				Vector3 newLocalScale = new Vector3(currentLocalScale.x/2f, currentLocalScale.y/2f, 1f);
+				GetComponent<Transform> ().localScale = newLocalScale;
+				MainCamera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y, 10);
+				MainCamera.GetComponent<Transform> ().rotation = new Quaternion (CamRot.x, 180, CamRot.z, CamRot.w);
+				transBgRenderer.transform.position += new Vector3(0,0,10);
 				IsOppositeSide = true;
 				FixAllPrism();
 			}
 			else if (IsOppositeSide == true)
 			{
-				GetComponent<Transform> ().localScale = new Vector3 (1f, 1f, 1f);
+				Vector3 currentLocalScale = GetComponent<Transform> ().localScale;
+				Vector3 newLocalScale = new Vector3(currentLocalScale.x*2f, currentLocalScale.y*2f, 1f);
+				GetComponent<Transform> ().localScale = newLocalScale;
 				GetComponent<Transform>().position = new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y + 1, 0);
-				Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y, -10);
-				Camera.GetComponent<Transform> ().rotation = new Quaternion (CamRot.x, 0, CamRot.z, CamRot.w);
+				MainCamera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y, -10);
+				MainCamera.GetComponent<Transform> ().rotation = new Quaternion (CamRot.x, 0, CamRot.z, CamRot.w);
+				transBgRenderer.transform.position -= new Vector3(0,0,10);
 				IsOppositeSide = false;
 				UnfixAllPrism();
 			}
+
+			yield return StartCoroutine(ZoomInMainCamera());
+
+			IsRotateOctahedral = false;
+		}
+	}
+
+	IEnumerator ZoomOutMainCamera()
+	{
+		originalCameraPos = MainCamera.transform.position;
+
+		//Scene 1-1, pos(0,-16.2,-10), size 25.8
+		Vector2 scene1TargerPos = new Vector2(0, -16.2f);
+		float scene1TargetSize = 25.8f;
+
+		Vector2 targetPos;
+		float targetSize;
+
+		// if (SceneManager.GetActiveScene().name == "1-1")
+		// {
+			targetPos = scene1TargerPos;
+			targetSize = scene1TargetSize;
+		// }
+
+		Vector2 currentPos = MainCamera.gameObject.transform.position;
+		Vector2 deltaPos = targetPos - currentPos;
+
+		float currentSize = MainCamera.orthographicSize;
+		float deltasize = targetSize - currentSize;
+
+		for (int i = 0; i < 60; i++)
+		{
+			MainCamera.gameObject.transform.position += (Vector3)(deltaPos/60f);
+			MainCamera.orthographicSize += deltasize/60f;
+
+			transBgRenderer.color += new Color(0,0,0,1f/60f);
+
+			yield return new WaitForSeconds(0.02f);
+		}
+	}
+
+	IEnumerator ZoomInMainCamera()
+	{
+		Vector2 targetPos = originalCameraPos;
+		float targetSize = 9.6f;
+
+		Vector2 currentPos = MainCamera.gameObject.transform.position;
+		Vector2 deltaPos = targetPos - currentPos;
+
+		float currentSize = MainCamera.orthographicSize;
+		float deltasize = targetSize - currentSize;
+
+		for (int i = 0; i < 60; i++)
+		{
+			MainCamera.gameObject.transform.position += (Vector3)(deltaPos/60f);
+			MainCamera.orthographicSize += deltasize/60f;
+
+			transBgRenderer.color -= new Color(0,0,0,1f/60f);
+
+			yield return new WaitForSeconds(0.02f);
 		}
 	}
 
@@ -245,24 +330,24 @@ public class PlayerController : MonoBehaviour
 		Vector3 PlayerPos;
 
 		PlayerPos = GetComponent<Transform> ().position;
-		CamPos = Camera.GetComponent<Transform> ().position;
+		CamPos = MainCamera.GetComponent<Transform> ().position;
 
 		if (PlayerPos.x - CamPos.x > 2)
 		{
-			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x + 0.1f, CamPos.y, CamPos.z);
+			MainCamera.GetComponent<Transform> ().position = new Vector3 (CamPos.x + 0.1f, CamPos.y, CamPos.z);
 		}
 		else if (PlayerPos.x - CamPos.x < -2)
 		{
-			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x - 0.1f, CamPos.y, CamPos.z);
+			MainCamera.GetComponent<Transform> ().position = new Vector3 (CamPos.x - 0.1f, CamPos.y, CamPos.z);
 		}
 
 		if (PlayerPos.y - CamPos.y > 2)
 		{
-			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y + 0.1f, CamPos.z);
+			MainCamera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y + 0.1f, CamPos.z);
 		}
 		else if (PlayerPos.y - CamPos.y < -2)
 		{
-			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y - 0.1f, CamPos.z);
+			MainCamera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y - 0.1f, CamPos.z);
 		}
 	}
 
