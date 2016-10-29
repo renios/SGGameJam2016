@@ -31,8 +31,8 @@ public class SoundManager : MonoBehaviour {
 
     void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
     {
-        //Debug.Log("Level Loaded");
-        //Debug.Log(scene.name);
+        Debug.Log("Level Loaded");
+        Debug.Log(scene.name);
         //Debug.Log(mode);
         this.StageClear = false;
     }
