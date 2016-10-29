@@ -13,10 +13,16 @@ public class SoundManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-        BGM = GetComponent<AudioSource>();
-        SE = GetComponent<AudioSource>();
+        var ASources = GetComponents<AudioSource>();
+        BGM = ASources[0];
+        SE = ASources[1];
         BGM.loop = true;
         DontDestroyOnLoad(this.gameObject);
+
+        if (FindObjectsOfType(GetType()).Length > 1)
+        {
+            Destroy(gameObject);
+        }
     }
 	
     void OnEnable()
@@ -26,29 +32,30 @@ public class SoundManager : MonoBehaviour {
 
     void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
     {
-        //Debug.Log("Level Loaded");
-        //Debug.Log(scene.name);
+        Debug.Log("Level Loaded");
+        Debug.Log(scene.name);
         //Debug.Log(mode);
         this.StageClear = false;
     }
 
     // Update is called once per frame
     void Update () {
-        Debug.Log(SceneManager.GetActiveScene().name);
+        //Debug.Log(SceneManager.GetActiveScene().name);
+        //Debug.Log(StageClear.ToString());
          
         if (!StageClear)
         {
             if (SceneManager.GetActiveScene().name == "StartScene" || SceneManager.GetActiveScene().name == "StageScene")
             {
-                if ((BGM.clip == null || BGM.clip != AudioList[0]) && !BGM.isPlaying)
+                if (((BGM.clip == null || BGM.clip != AudioList[0]) || !(BGM.clip == AudioList[0] && BGM.isPlaying)))
                 {
                     BGM.clip = AudioList[0];
                     BGM.Play();
                 }
             }
-            else if (SceneManager.GetActiveScene().name == "1-1" || SceneManager.GetActiveScene().name == "1-2")
+            else if (SceneManager.GetActiveScene().name == "1-1" || SceneManager.GetActiveScene().name == "1-2" ||SceneManager.GetActiveScene().name == "RotateScene")
             {
-                if ((BGM.clip == null || BGM.clip != AudioList[1]) && !BGM.isPlaying)
+                if (((BGM.clip == null || BGM.clip != AudioList[1]) && !(BGM.clip == AudioList[1] && BGM.isPlaying)))
                 {
                     BGM.clip = AudioList[1];
                     BGM.Play();

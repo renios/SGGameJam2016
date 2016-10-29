@@ -25,10 +25,13 @@ public class PlayerController : MonoBehaviour
 	private Vector3 StartPoint;
 	private Vector3 TargetPos;
 
+    SoundManager soundManager;
+
 	void Start()
 	{
 		StartPoint = new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y, 0);
 		RotateAnimation.SetActive (false);
+        soundManager = FindObjectOfType<SoundManager>();
 
 		IsOppositeSide = false;
 		IsRotateOctahedral = false;
@@ -120,7 +123,8 @@ public class PlayerController : MonoBehaviour
 			Vector3 CamPos;
 			Quaternion CamRot;
 
-			CamPos = Camera.GetComponent<Transform> ().position;
+            soundManager.PlaySE("Rotate");
+            CamPos = Camera.GetComponent<Transform> ().position;
 			CamRot = Camera.GetComponent<Transform> ().rotation;
 
 			IsRotateOctahedral = true;
@@ -130,6 +134,8 @@ public class PlayerController : MonoBehaviour
 			RotateAnimation.SetActive (false);
 
 			IsRotateOctahedral = false;
+
+            
 
 			if (IsOppositeSide == false)
 			{
