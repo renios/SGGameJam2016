@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
 	public Transform CamTargetPoint;
 	public GameObject LeftGroundChecker;
 	public GameObject RightGroundChecker;
-	public GameObject Octahedral;
 	public GameObject RotateAnimation;
 
 	public float StairHeight;
