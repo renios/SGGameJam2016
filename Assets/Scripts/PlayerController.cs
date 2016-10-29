@@ -17,7 +17,8 @@ public class PlayerController : MonoBehaviour
 
 	public bool IsOppositeSide; // true -> small, false -> big
 	public bool IsGetStair;
-    private bool IsStartStair; 
+    private bool IsStartStair;
+    private bool IsMoveable;
 	public bool IsGetDoor;
 	public bool GoRight;
 	public bool GoLeft;
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
 		IsOppositeSide = false;
 		IsRotateOctahedral = false;
 		IsGetStair = false;
+        IsMoveable = true;
 		WinGame = false;
 		StairHeight = 0;
 		StairWidth = 0;
@@ -118,12 +120,12 @@ public class PlayerController : MonoBehaviour
 
 	void Move ()
 	{
-		if (GoRight && (IsOppositeSide == false) || (GoLeft && IsOppositeSide == true))
+		if (IsMoveable && (GoRight && (IsOppositeSide == false) || (GoLeft && IsOppositeSide == true)))
 		{
 			GetComponent<Transform> ().rotation = new Quaternion (0, 0, 0, GetComponent<Transform> ().rotation.w);
 			GetComponent<Transform>().position = new Vector3(GetComponent<Transform>().position.x + 0.1f, GetComponent<Transform>().position.y, 0);
 		}
-		else if (GoRight && (IsOppositeSide == true) || (GoLeft && IsOppositeSide == false))
+		else if (IsMoveable && (GoRight && (IsOppositeSide == true) || (GoLeft && IsOppositeSide == false)))
 		{
 			GetComponent<Transform> ().rotation = new Quaternion (0, 180, 0, GetComponent<Transform> ().rotation.w);
 			GetComponent<Transform>().position = new Vector3(GetComponent<Transform>().position.x - 0.1f, GetComponent<Transform>().position.y, 0);
@@ -293,6 +295,7 @@ public class PlayerController : MonoBehaviour
 				if (soundManager != null)
 	                soundManager.PlaySE("Warp");
                 IsStartStair = true;
+                IsMoveable = false;
                 GetComponent<SpriteRenderer>().enabled = false;
             }
 			float step = 3 * Time.deltaTime;
@@ -304,6 +307,7 @@ public class PlayerController : MonoBehaviour
 			{
 				IsGetStair = false;
                 IsStartStair = false;
+                IsMoveable = true;
 				GetComponent<BoxCollider2D> ().enabled = true;
 				GetComponent<Rigidbody2D> ().WakeUp ();
                 GetComponent<SpriteRenderer>().enabled = true;
