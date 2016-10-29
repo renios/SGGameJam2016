@@ -2773,6 +2773,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4000011175050598, guid: 2012750afb6b7e547807e6c181b4f418,
     type: 2}
   m_PrefabInternal: {fileID: 1199305905}
+--- !u!1 &1214307721 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012866843414, guid: f33aa1ac5215a914a90c53de40b8f9a6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1242363174}
 --- !u!4 &1229418721 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000010573832302, guid: a3e6924d52c0d41829dc953312e829ce,
@@ -3792,6 +3797,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1742525653}
   - 212: {fileID: 1742525652}
+  - 114: {fileID: 1742525654}
   m_Layer: 0
   m_Name: Octahedral
   m_TagString: Untagged
@@ -3828,7 +3834,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: bf4276dc34e37fe469f0f2ca85b65ba0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e7f3b23b1d0186f4cb65c2e18014cbfc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3839,12 +3845,29 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1742525651}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.31, y: 1.79, z: 0}
+  m_LocalPosition: {x: 8.3, y: 18.4, z: 0}
   m_LocalScale: {x: 3.2, y: 3.2, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!114 &1742525654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1742525651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4cfeddeabfa034459b8daef0e90ba4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainCamera: {fileID: 2133394844}
+  Player: {fileID: 1214307721}
+  CamTargetPoint: {fileID: 470857820}
+  CamSpeed: 7
+  ReadyToMoveScene: 0
+  IsRotate: 0
 --- !u!1001 &1784063644
 Prefab:
   m_ObjectHideFlags: 0
