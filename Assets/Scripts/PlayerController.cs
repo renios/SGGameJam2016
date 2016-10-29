@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
 
 	public bool IsOppositeSide; // true -> small, false -> big
 	public bool IsGetStair;
+    private bool IsStartStair; 
 	public bool IsGetDoor;
 	public bool GoRight;
 	public bool GoLeft;
@@ -179,6 +180,11 @@ public class PlayerController : MonoBehaviour
 	{
 		if (IsGetStair == true)
 		{
+            if (!IsStartStair)
+            {
+                soundManager.PlaySE("Warp");
+                IsStartStair = true;
+            }
 			float step = 3 * Time.deltaTime;
 			GetComponent<Transform>().position = Vector3.MoveTowards(GetComponent<Transform>().position, TargetPos, step);
 			GetComponent<BoxCollider2D> ().enabled = false;
@@ -187,6 +193,7 @@ public class PlayerController : MonoBehaviour
 			if(GetComponent<Transform>().position.y >= TargetPos.y)
 			{
 				IsGetStair = false;
+                IsStartStair = false;
 				GetComponent<BoxCollider2D> ().enabled = true;
 				GetComponent<Rigidbody2D> ().WakeUp ();
 			}
@@ -259,6 +266,7 @@ public class PlayerController : MonoBehaviour
 
 	void IfArriveToDoor()
 	{
+        soundManager.PlaySE("Clear");
 		WinGame = true;
 	}
 }
