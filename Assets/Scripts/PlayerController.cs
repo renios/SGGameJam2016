@@ -4,11 +4,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-	public GameObject Camera;
+	public Camera Camera;
+	public Transform CamTargetPoint;
 
-	public float PlayerSpeed;
 	public float StairHeight;
 	public float StairWidth;
+	public float CamSpeed;
 
 	public bool IsOppositeSide;
 	public bool IsGetStair;
@@ -16,6 +17,7 @@ public class PlayerController : MonoBehaviour
 	public bool GoRight;
 	public bool GoLeft;
 	public bool WinGame;
+	public bool IsRotateOctahedral;
 
 	private Vector3 StartPoint;
 
@@ -24,6 +26,7 @@ public class PlayerController : MonoBehaviour
 		StartPoint = new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y, 0);
 
 		IsOppositeSide = false;
+		IsRotateOctahedral = false;
 		IsGetStair = false;
 		WinGame = false;
 		StairHeight = 0;
@@ -32,17 +35,26 @@ public class PlayerController : MonoBehaviour
 
 	void Update()
 	{
-		CameraMoving ();
-		MovingInput ();
-		Move ();
-		MoveToOppositeSide ();
-		MoveByStair ();
-
-		Restart ();
-
-		if (IsGetDoor == true && Input.GetKeyDown(KeyCode.UpArrow))
+		if (IsRotateOctahedral == false)
 		{
-			IfArriveToDoor ();
+			CameraMoving ();
+			MovingInput ();
+			Move ();
+			MoveToOppositeSide ();
+			MoveByStair ();
+
+			Restart ();
+
+			if (IsGetDoor == true && Input.GetKeyDown(KeyCode.UpArrow))
+			{
+				IfArriveToDoor ();
+			}
+		}
+
+		else
+		{
+			float step = CamSpeed * Time.deltaTime;
+			Camera.GetComponent<Transform> ().position = Vector3.MoveTowards (Camera.GetComponent<Transform> ().position, CamTargetPoint.position, step);
 		}
 	}
 
@@ -60,13 +72,11 @@ public class PlayerController : MonoBehaviour
 			{
 				GoRight = true;
 				GoLeft = false;
-				Debug.Log (GoRight);
 			}
 			else
 			{
 				GoRight = false;
 				GoLeft = true;
-				Debug.Log (GoLeft);
 			}
 		}
 		else
@@ -104,7 +114,10 @@ public class PlayerController : MonoBehaviour
 			CamPos = Camera.GetComponent<Transform> ().position;
 			CamRot = Camera.GetComponent<Transform> ().rotation;
 
-			if (IsOppositeSide == false)
+			Camera.orthographicSize = 25;
+			IsRotateOctahedral = true;
+
+			/*			if (IsOppositeSide == false)
 			{
 				GetComponent<Transform> ().localScale = new Vector3 (0.5f, 0.5f, 1f);
 				Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y, 10);
@@ -118,7 +131,7 @@ public class PlayerController : MonoBehaviour
 				Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y, -10);
 				Camera.GetComponent<Transform> ().rotation = new Quaternion (CamRot.x, 0, CamRot.z, CamRot.w);
 				IsOppositeSide = false;
-			}
+			}*/
 		}
 	}
 

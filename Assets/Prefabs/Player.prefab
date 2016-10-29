@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012866843414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.27, y: 1.8, z: 0}
+  m_LocalPosition: {x: 4.01, y: 8.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -86,11 +86,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Camera: {fileID: 0}
-  PlayerSpeed: 3
+  CamTargetPoint: {fileID: 0}
   StairHeight: 0
   StairWidth: 0
+  CamSpeed: 3
   IsOppositeSide: 0
   IsGetStair: 0
+  IsGetDoor: 0
+  GoRight: 0
+  GoLeft: 0
+  WinGame: 0
 --- !u!212 &212000011885028738
 SpriteRenderer:
   m_ObjectHideFlags: 1
