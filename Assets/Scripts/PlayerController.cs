@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
 
 	public bool IsOppositeSide;
 	public bool IsGetStair;
+	public bool IsGetDoor;
 
 	private Vector3 StartPoint;
 
@@ -32,16 +33,23 @@ public class PlayerController : MonoBehaviour
 		MoveByStair ();
 
 		Restart ();
+
+		if (IsGetDoor == true && Input.GetKeyDown(KeyCode.UpArrow))
+		{
+			IfArriveToDoor ();
+		}
 	}
 
 	void MovingKeyInput ()
 	{
 		if ((Input.GetKey(KeyCode.RightArrow) && IsOppositeSide == false) || (Input.GetKey(KeyCode.LeftArrow) && IsOppositeSide == true))
 		{
+			GetComponent<Transform> ().rotation = new Quaternion (0, 0, 0, GetComponent<Transform> ().rotation.w);
 			GetComponent<Transform>().position = new Vector3(GetComponent<Transform>().position.x + 0.1f, GetComponent<Transform>().position.y, 0);
 		}
 		else if ((Input.GetKey(KeyCode.RightArrow) && IsOppositeSide == true) || (Input.GetKey(KeyCode.LeftArrow) && IsOppositeSide == false))
 		{
+			GetComponent<Transform> ().rotation = new Quaternion (0, 180, 0, GetComponent<Transform> ().rotation.w);
 			GetComponent<Transform>().position = new Vector3(GetComponent<Transform>().position.x - 0.1f, GetComponent<Transform>().position.y, 0);
 		}
 		else
@@ -95,6 +103,11 @@ public class PlayerController : MonoBehaviour
 			IsGetStair = true;
 			Debug.Log (IsGetStair);
 		}
+
+		else if (Collider.gameObject.tag == "Door")
+		{
+			IsGetDoor = true;
+		}
 	}
 
 	void OnTriggerExit2D(Collider2D Collider)
@@ -103,6 +116,11 @@ public class PlayerController : MonoBehaviour
 		{
 			IsGetStair = false;
 			Debug.Log (IsGetStair);
+		}
+
+		else if (Collider.gameObject.tag == "Door")
+		{
+			IsGetDoor = false;
 		}
 	}
 
@@ -122,13 +140,18 @@ public class PlayerController : MonoBehaviour
 		PlayerPos = GetComponent<Transform> ().position;
 		CamPos = Camera.GetComponent<Transform> ().position;
 
-		if (PlayerPos.x - CamPos.x > 2.5)
+		if (PlayerPos.x - CamPos.x > 2)
 		{
 			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x + 0.1f, CamPos.y, CamPos.z);
 		}
-		else if (PlayerPos.x - CamPos.x < -2.5)
+		else if (PlayerPos.x - CamPos.x < -2)
 		{
 			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x - 0.1f, CamPos.y, CamPos.z);
 		}
+	}
+
+	void IfArriveToDoor()
+	{
+		Debug.Log ("You Win!!");
 	}
 }
