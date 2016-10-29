@@ -26,7 +26,7 @@ GameObject:
   - 50: {fileID: 50000011127846200}
   m_Layer: 0
   m_Name: glass_stair
-  m_TagString: Untagged
+  m_TagString: Prism
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

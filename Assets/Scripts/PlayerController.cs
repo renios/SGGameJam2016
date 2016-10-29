@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 	public float StairWidth;
 	public float CamSpeed;
 
-	public bool IsOppositeSide;
+	public bool IsOppositeSide; // true -> small, false -> big
 	public bool IsGetStair;
 	public bool IsGetDoor;
 	public bool GoRight;
@@ -136,6 +136,7 @@ public class PlayerController : MonoBehaviour
 				Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y, 10);
 				Camera.GetComponent<Transform> ().rotation = new Quaternion (CamRot.x, 180, CamRot.z, CamRot.w);
 				IsOppositeSide = true;
+				FixAllPrism();
 			}
 			else if (IsOppositeSide == true)
 			{
@@ -144,7 +145,26 @@ public class PlayerController : MonoBehaviour
 				Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y, -10);
 				Camera.GetComponent<Transform> ().rotation = new Quaternion (CamRot.x, 0, CamRot.z, CamRot.w);
 				IsOppositeSide = false;
+				UnfixAllPrism();
 			}
+		}
+	}
+
+	void FixAllPrism()
+	{
+		GameObject[] prisms = GameObject.FindGameObjectsWithTag("Prism");
+		foreach (var prism in prisms)
+		{
+			prism.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+		}
+	}
+
+	void UnfixAllPrism()
+	{
+		GameObject[] prisms = GameObject.FindGameObjectsWithTag("Prism");
+		foreach (var prism in prisms)
+		{
+			prism.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
 		}
 	}
 
