@@ -10,6 +10,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StageScene.unity
   - enabled: 1
+    path: Assets/Scenes/RotateScene.unity
+  - enabled: 1
     path: Assets/Scenes/1-1.unity
   - enabled: 1
     path: Assets/Scenes/1-2.unity
