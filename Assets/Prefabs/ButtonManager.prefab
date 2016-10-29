@@ -63,4 +63,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e7d65ac613d5e438f89e5181af92c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextStage: {fileID: 0}
+  Complete: {fileID: 0}
+  WinEffect: {fileID: 0}
+  BrightStarMaterial: {fileID: 2100000, guid: e001f95f8a8a54b96a58b594fa1b691b, type: 2}

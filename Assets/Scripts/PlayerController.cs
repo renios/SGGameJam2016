@@ -44,6 +44,8 @@ public class PlayerController : MonoBehaviour
 		StairHeight = 0;
 		StairWidth = 0;
 
+		transBgRenderer.color += new Color(0,0,0,1);
+
 		StartCoroutine(InitializeCamera());
 	}
 

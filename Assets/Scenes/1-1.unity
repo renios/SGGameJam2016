@@ -138,6 +138,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -179,6 +183,10 @@ Prefab:
     - target: {fileID: 4000010573832302, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -260,7 +268,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 64307999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9986944, y: 3.7592478, z: 0}
+  m_LocalPosition: {x: 0.4, y: 3.7592478, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -465,6 +473,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -646,6 +658,10 @@ Prefab:
       propertyPath: InitialModule.startSize.scalar
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -701,6 +717,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -978,6 +998,10 @@ Prefab:
       propertyPath: InitialModule.startSize.scalar
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -1044,6 +1068,10 @@ Prefab:
       propertyPath: InitialModule.startSize.scalar
       value: 1.3
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -1099,6 +1127,10 @@ Prefab:
         type: 2}
       propertyPath: InitialModule.startSize.scalar
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -1161,6 +1193,10 @@ Prefab:
       propertyPath: InitialModule.startSize.scalar
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -1216,6 +1252,10 @@ Prefab:
         type: 2}
       propertyPath: InitialModule.startSize.scalar
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -1280,6 +1320,10 @@ Prefab:
       propertyPath: InitialModule.startSize.scalar
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -1330,6 +1374,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -1386,6 +1434,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -1504,6 +1556,10 @@ Prefab:
       propertyPath: InitialModule.startSize.scalar
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -1589,6 +1645,48 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1001 &730502594
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1866824389}
+    m_Modifications:
+    - target: {fileID: 4000011844353800, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.080000855
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011844353800, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.28999916
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011844353800, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011844353800, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011844353800, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011844353800, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011844353800, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011844353800, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &765053192
 GameObject:
   m_ObjectHideFlags: 0
@@ -1699,6 +1797,10 @@ Prefab:
       propertyPath: InitialModule.startSize.scalar
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -1755,6 +1857,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -1801,6 +1907,10 @@ Prefab:
     - target: {fileID: 4000010573832302, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -1902,6 +2012,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -1952,6 +2066,10 @@ Prefab:
         type: 2}
       propertyPath: InitialModule.startSize.scalar
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -2013,6 +2131,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -2116,6 +2238,11 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &1204832322 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000010711381584, guid: 50dbb1f7901b740b99f94e603479d4b4,
+    type: 2}
+  m_PrefabInternal: {fileID: 730502594}
 --- !u!1001 &1233631136
 Prefab:
   m_ObjectHideFlags: 0
@@ -2294,6 +2421,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -2341,6 +2472,11 @@ Prefab:
       propertyPath: Complete
       value: 
       objectReference: {fileID: 1233631137}
+    - target: {fileID: 114000013856102570, guid: b44b3e9b2bc98c64ba2b46b54719e654,
+        type: 2}
+      propertyPath: WinEffect
+      value: 
+      objectReference: {fileID: 1204832322}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b44b3e9b2bc98c64ba2b46b54719e654, type: 2}
   m_IsPrefabParent: 0
@@ -2391,6 +2527,10 @@ Prefab:
         type: 2}
       propertyPath: InitialModule.startSize.scalar
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -2446,7 +2586,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a7b5783b37054470f93e77caddb1a0ed, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!4 &1346805778
@@ -2504,6 +2644,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -2704,6 +2848,10 @@ Prefab:
         type: 2}
       propertyPath: InitialModule.startSize.scalar
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -2962,6 +3110,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -3013,6 +3165,10 @@ Prefab:
         type: 2}
       propertyPath: InitialModule.startSize.scalar
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -3137,6 +3293,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -3149,11 +3309,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000011323979002, guid: f33aa1ac5215a914a90c53de40b8f9a6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.3222225
+      value: -3.01
       objectReference: {fileID: 0}
     - target: {fileID: 4000011323979002, guid: f33aa1ac5215a914a90c53de40b8f9a6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -6.274074
+      value: -6.26
       objectReference: {fileID: 0}
     - target: {fileID: 4000011323979002, guid: f33aa1ac5215a914a90c53de40b8f9a6, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3278,6 +3438,10 @@ Prefab:
       propertyPath: InitialModule.startSize.scalar
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -3334,6 +3498,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -3384,6 +3552,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -3445,6 +3617,10 @@ Prefab:
         type: 2}
       propertyPath: InitialModule.startSize.scalar
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -3707,6 +3883,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}

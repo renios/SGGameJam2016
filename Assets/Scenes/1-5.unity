@@ -143,6 +143,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -193,6 +197,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -456,6 +464,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -588,6 +600,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -774,6 +790,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -947,6 +967,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -997,6 +1021,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -1098,6 +1126,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -1435,6 +1467,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -1686,6 +1722,10 @@ Prefab:
       propertyPath: InitialModule.startSize.scalar
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -1804,6 +1844,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -1921,6 +1965,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -2132,6 +2180,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -2182,6 +2234,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -2301,6 +2357,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -2351,6 +2411,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -2617,6 +2681,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -2668,6 +2736,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -2718,6 +2790,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -2976,6 +3052,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -3032,6 +3112,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -3082,6 +3166,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -3268,6 +3356,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -3320,6 +3412,10 @@ Prefab:
       propertyPath: InitialModule.startSize.scalar
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -3370,6 +3466,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -3423,6 +3523,11 @@ Prefab:
       propertyPath: Complete
       value: 
       objectReference: {fileID: 832084621}
+    - target: {fileID: 114000013856102570, guid: b44b3e9b2bc98c64ba2b46b54719e654,
+        type: 2}
+      propertyPath: WinEffect
+      value: 
+      objectReference: {fileID: 1950229143}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b44b3e9b2bc98c64ba2b46b54719e654, type: 2}
   m_IsPrefabParent: 0
@@ -3925,6 +4030,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -3975,6 +4084,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -4208,6 +4321,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -4394,6 +4511,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -4449,6 +4570,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -4636,6 +4761,10 @@ Prefab:
         type: 2}
       propertyPath: InitialModule.startSize.scalar
       value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -4847,6 +4976,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -4965,6 +5098,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -5015,6 +5152,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -5138,6 +5279,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -5308,6 +5453,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -5369,6 +5518,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -5424,6 +5577,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -5622,6 +5779,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -5678,6 +5839,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -5728,6 +5893,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -5784,6 +5953,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -5917,6 +6090,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -6455,6 +6632,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -6510,6 +6691,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -6721,6 +6906,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -6834,6 +7023,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -6890,6 +7083,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -6940,6 +7137,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -6996,6 +7197,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -7232,6 +7437,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -7287,6 +7496,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -7401,6 +7614,10 @@ Prefab:
         type: 2}
       propertyPath: InitialModule.startSize.scalar
       value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -7540,6 +7757,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -7653,6 +7874,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -7708,6 +7933,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -8082,6 +8311,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -8138,6 +8371,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -8193,6 +8430,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -8974,6 +9215,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -9030,6 +9275,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -9085,6 +9334,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -9203,6 +9456,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -9543,6 +9800,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -9604,6 +9865,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -9659,6 +9924,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -10029,6 +10298,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -10162,6 +10435,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -10218,6 +10495,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -10269,6 +10550,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -10319,6 +10604,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -10414,11 +10703,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000011323979002, guid: f33aa1ac5215a914a90c53de40b8f9a6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.3775
+      value: -2.377
       objectReference: {fileID: 0}
     - target: {fileID: 4000011323979002, guid: f33aa1ac5215a914a90c53de40b8f9a6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.425
+      value: 1.396
       objectReference: {fileID: 0}
     - target: {fileID: 4000011323979002, guid: f33aa1ac5215a914a90c53de40b8f9a6, type: 2}
       propertyPath: m_LocalPosition.z
@@ -10544,6 +10833,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -10599,6 +10892,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -10731,7 +11028,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a7b5783b37054470f93e77caddb1a0ed, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!4 &1728683740
@@ -10794,6 +11091,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -10923,6 +11224,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -10984,6 +11289,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -11040,6 +11349,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -11095,6 +11408,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -11201,6 +11518,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -11376,6 +11697,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -11432,6 +11757,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -11482,6 +11811,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -11655,6 +11988,62 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 0.416}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1001 &1950229142
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 703152469}
+    m_Modifications:
+    - target: {fileID: 4000011844353800, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.080000855
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011844353800, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.28999916
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011844353800, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011844353800, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011844353800, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011844353800, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011844353800, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011844353800, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010711381584, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000010028878178, guid: 50dbb1f7901b740b99f94e603479d4b4,
+        type: 2}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 50dbb1f7901b740b99f94e603479d4b4, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1950229143 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000010711381584, guid: 50dbb1f7901b740b99f94e603479d4b4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1950229142}
 --- !u!1001 &1950536226
 Prefab:
   m_ObjectHideFlags: 0
@@ -11702,6 +12091,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -11753,6 +12146,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -11887,6 +12284,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -11937,6 +12338,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -11998,6 +12403,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -12404,6 +12813,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -12464,6 +12877,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
@@ -12578,6 +12995,10 @@ Prefab:
       propertyPath: m_Name
       value: Star_background (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
   m_IsPrefabParent: 0
@@ -12628,6 +13049,10 @@ Prefab:
     - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
       propertyPath: m_Name
       value: Star_background (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013360541546, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
+      propertyPath: m_TagString
+      value: Star_bg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3e6924d52c0d41829dc953312e829ce, type: 2}
