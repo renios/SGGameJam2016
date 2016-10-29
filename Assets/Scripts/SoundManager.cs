@@ -13,8 +13,9 @@ public class SoundManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-        BGM = GetComponent<AudioSource>();
-        SE = GetComponent<AudioSource>();
+        var ASources = GetComponents<AudioSource>();
+        BGM = ASources[0];
+        SE = ASources[1];
         BGM.loop = true;
         DontDestroyOnLoad(this.gameObject);
 
@@ -52,7 +53,7 @@ public class SoundManager : MonoBehaviour {
                     BGM.Play();
                 }
             }
-            else if (SceneManager.GetActiveScene().name == "1-1" || SceneManager.GetActiveScene().name == "1-2")
+            else if (SceneManager.GetActiveScene().name == "1-1" || SceneManager.GetActiveScene().name == "1-2" ||SceneManager.GetActiveScene().name == "RotateScene")
             {
                 if (((BGM.clip == null || BGM.clip != AudioList[1]) && !(BGM.clip == AudioList[1] && BGM.isPlaying)))
                 {
