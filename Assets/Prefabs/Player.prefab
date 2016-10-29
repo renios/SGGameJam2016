@@ -179,6 +179,7 @@ MonoBehaviour:
   CamTargetPoint: {fileID: 0}
   LeftGroundChecker: {fileID: 1000012682204094}
   RightGroundChecker: {fileID: 1000012788654534}
+  Octahedral: {fileID: 0}
   StairHeight: 0
   StairWidth: 0
   CamSpeed: 10
