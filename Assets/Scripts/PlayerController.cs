@@ -89,6 +89,11 @@ public class PlayerController : MonoBehaviour
 				//float step = CamSpeed * Time.deltaTime;
 				//Camera.GetComponent<Transform> ().position = Vector3.MoveTowards (Camera.GetComponent<Transform> ().position, CamTargetPoint.position, step);
 			}
+
+			if ((GoLeft || GoRight) && !WinGame)
+				GetComponent<Animator>().SetBool("IsWalk", true);
+			else
+				GetComponent<Animator>().SetBool("IsWalk", false);
 		}
 	}
 
