@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class PlayerController : MonoBehaviour
 	public bool IsGetDoor;
 	public bool GoRight;
 	public bool GoLeft;
+	public bool WinGame;
 
 	private Vector3 StartPoint;
 
@@ -23,6 +25,7 @@ public class PlayerController : MonoBehaviour
 
 		IsOppositeSide = false;
 		IsGetStair = false;
+		WinGame = false;
 		StairHeight = 0;
 		StairWidth = 0;
 	}
@@ -185,6 +188,6 @@ public class PlayerController : MonoBehaviour
 
 	void IfArriveToDoor()
 	{
-		Debug.Log ("You Win!!");
+		WinGame = true;
 	}
 }
