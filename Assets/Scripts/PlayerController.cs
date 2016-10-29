@@ -124,7 +124,8 @@ public class PlayerController : MonoBehaviour
 			Vector3 CamPos;
 			Quaternion CamRot;
 
-            soundManager.PlaySE("Rotate");
+			if (soundManager != null)
+            	soundManager.PlaySE("Rotate");
             CamPos = Camera.GetComponent<Transform> ().position;
 			CamRot = Camera.GetComponent<Transform> ().rotation;
 
@@ -182,7 +183,8 @@ public class PlayerController : MonoBehaviour
 		{
             if (!IsStartStair)
             {
-                soundManager.PlaySE("Warp");
+				if (soundManager != null)
+	                soundManager.PlaySE("Warp");
                 IsStartStair = true;
             }
 			float step = 3 * Time.deltaTime;
@@ -266,7 +268,8 @@ public class PlayerController : MonoBehaviour
 
 	void IfArriveToDoor()
 	{
-        soundManager.PlaySE("Clear");
+		if (soundManager != null)
+	        soundManager.PlaySE("Clear");
 		WinGame = true;
 	}
 }
