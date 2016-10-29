@@ -15,8 +15,6 @@ public class WinButtonPopUp : MonoBehaviour
 		{
 			GetComponent<WinButtonPopUp> ().enabled = false;
 		}
-
-		Debug.Log (Player);
 	}
 
 	void Update()

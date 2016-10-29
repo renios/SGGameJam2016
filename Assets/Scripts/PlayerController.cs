@@ -4,11 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-	public GameObject Camera;
+	public Camera Camera;
+	public Transform CamTargetPoint;
+	public GameObject LeftGroundChecker;
+	public GameObject RightGroundChecker;
+	public GameObject RotateAnimation;
 
-	public float PlayerSpeed;
 	public float StairHeight;
 	public float StairWidth;
+	public float CamSpeed;
 
 	public bool IsOppositeSide;
 	public bool IsGetStair;
@@ -16,14 +20,17 @@ public class PlayerController : MonoBehaviour
 	public bool GoRight;
 	public bool GoLeft;
 	public bool WinGame;
+	public bool IsRotateOctahedral;
 
 	private Vector3 StartPoint;
 
 	void Start()
 	{
 		StartPoint = new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y, 0);
+		RotateAnimation.SetActive (false);
 
 		IsOppositeSide = false;
+		IsRotateOctahedral = false;
 		IsGetStair = false;
 		WinGame = false;
 		StairHeight = 0;
@@ -32,17 +39,30 @@ public class PlayerController : MonoBehaviour
 
 	void Update()
 	{
-		CameraMoving ();
-		MovingInput ();
-		Move ();
-		MoveToOppositeSide ();
-		MoveByStair ();
-
-		Restart ();
-
-		if (IsGetDoor == true && Input.GetKeyDown(KeyCode.UpArrow))
+		if ((LeftGroundChecker.GetComponent<LeftGroundCheck> ().IsLeftOnGround == true) || (RightGroundChecker.GetComponent<RightGroundCheck> ().IsRightOnGround == true))
 		{
-			IfArriveToDoor ();
+			if ((IsRotateOctahedral == false))
+			{
+				CameraMoving ();
+				MovingInput ();
+				Move ();
+				StartCoroutine (MoveToOppositeSide ());
+				MoveByStair ();
+
+				Restart ();
+
+				if (IsGetDoor == true)
+				{
+					IfArriveToDoor ();
+					IsGetDoor = false;
+				}
+			}
+
+			else
+			{
+				float step = CamSpeed * Time.deltaTime;
+				Camera.GetComponent<Transform> ().position = Vector3.MoveTowards (Camera.GetComponent<Transform> ().position, CamTargetPoint.position, step);
+			}
 		}
 	}
 
@@ -60,13 +80,11 @@ public class PlayerController : MonoBehaviour
 			{
 				GoRight = true;
 				GoLeft = false;
-				Debug.Log (GoRight);
 			}
 			else
 			{
 				GoRight = false;
 				GoLeft = true;
-				Debug.Log (GoLeft);
 			}
 		}
 		else
@@ -94,7 +112,7 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
-	void MoveToOppositeSide()
+	IEnumerator MoveToOppositeSide()
 	{
 		if (Input.GetKeyDown (KeyCode.Z))
 		{
@@ -103,6 +121,14 @@ public class PlayerController : MonoBehaviour
 
 			CamPos = Camera.GetComponent<Transform> ().position;
 			CamRot = Camera.GetComponent<Transform> ().rotation;
+
+			IsRotateOctahedral = true;
+
+			RotateAnimation.SetActive (true);
+			yield return new WaitForSeconds (5f);
+			RotateAnimation.SetActive (false);
+
+			IsRotateOctahedral = false;
 
 			if (IsOppositeSide == false)
 			{
@@ -124,9 +150,12 @@ public class PlayerController : MonoBehaviour
 
 	void MoveByStair()
 	{
-		if (IsGetStair == true && Input.GetKeyDown (KeyCode.UpArrow))
+		if (IsGetStair == true)
 		{
-			GetComponent<Transform>().position = new Vector3(GetComponent<Transform>().position.x + StairWidth, GetComponent<Transform>().position.y + StairHeight, 0);
+			Vector3 TargetPos = new Vector3 (GetComponent<Transform>().position.x + StairWidth, GetComponent<Transform>().position.y + StairHeight, 0);
+			float step = 3 * Time.deltaTime;
+			GetComponent<Transform>().position = Vector3.MoveTowards(GetComponent<Transform>().position, TargetPos, step);
+			IsGetStair = false;
 		}
 	}
 
@@ -137,7 +166,6 @@ public class PlayerController : MonoBehaviour
 			StairHeight = Collider.gameObject.GetComponent<StairInfo> ().StairHeight;
 			StairWidth = Collider.gameObject.GetComponent<StairInfo> ().StairWidth;
 			IsGetStair = true;
-			Debug.Log (IsGetStair);
 		}
 
 		else if (Collider.gameObject.tag == "Door")
@@ -151,7 +179,6 @@ public class PlayerController : MonoBehaviour
 		if (Collider.gameObject.tag == "Stair")
 		{
 			IsGetStair = false;
-			Debug.Log (IsGetStair);
 		}
 
 		else if (Collider.gameObject.tag == "Door")
@@ -183,6 +210,15 @@ public class PlayerController : MonoBehaviour
 		else if (PlayerPos.x - CamPos.x < -2)
 		{
 			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x - 0.1f, CamPos.y, CamPos.z);
+		}
+
+		if (PlayerPos.y - CamPos.y > 2)
+		{
+			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y + 0.1f, CamPos.z);
+		}
+		else if (PlayerPos.y - CamPos.y < -2)
+		{
+			Camera.GetComponent<Transform> ().position = new Vector3 (CamPos.x, CamPos.y - 0.1f, CamPos.z);
 		}
 	}
 
