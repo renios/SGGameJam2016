@@ -573,48 +573,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4000010573832302, guid: a3e6924d52c0d41829dc953312e829ce,
     type: 2}
   m_PrefabInternal: {fileID: 133323235}
---- !u!1001 &217585479
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4000010378981116, guid: f52939b569b6e422d993dbaf9659b67c, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 13.47
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010378981116, guid: f52939b569b6e422d993dbaf9659b67c, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 3.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010378981116, guid: f52939b569b6e422d993dbaf9659b67c, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010378981116, guid: f52939b569b6e422d993dbaf9659b67c, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010378981116, guid: f52939b569b6e422d993dbaf9659b67c, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010378981116, guid: f52939b569b6e422d993dbaf9659b67c, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010378981116, guid: f52939b569b6e422d993dbaf9659b67c, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010378981116, guid: f52939b569b6e422d993dbaf9659b67c, type: 2}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f52939b569b6e422d993dbaf9659b67c, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &223501952
 Prefab:
   m_ObjectHideFlags: 0
@@ -2205,6 +2163,11 @@ Prefab:
       propertyPath: WinEffect
       value: 
       objectReference: {fileID: 2030951911}
+    - target: {fileID: 114000013856102570, guid: b44b3e9b2bc98c64ba2b46b54719e654,
+        type: 2}
+      propertyPath: BrightStarMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: e001f95f8a8a54b96a58b594fa1b691b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b44b3e9b2bc98c64ba2b46b54719e654, type: 2}
   m_IsPrefabParent: 0
@@ -6045,7 +6008,8 @@ Transform:
   m_LocalPosition: {x: 8.24, y: -0.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 976695949}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!1 &2142117090
