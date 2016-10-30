@@ -99,7 +99,8 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.N))
             {
                 if (SceneManager.GetActiveScene().name == "1-1") SceneManager.LoadScene("1-2");
-                else if (SceneManager.GetActiveScene().name == "1-2") SceneManager.LoadScene("1-5");
+                else if (SceneManager.GetActiveScene().name == "1-2") SceneManager.LoadScene("StageScene");
+                else if (SceneManager.GetActiveScene().name == "1-5") SceneManager.LoadScene("StageScene");
             }
 
 			if ((GoLeft || GoRight) && !WinGame)
