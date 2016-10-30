@@ -239,7 +239,6 @@ public class PlayerController : MonoBehaviour
 			targetPos = scene1TargerPos;
 			targetSize = scene1TargetSize;
 		}
-
 		Vector2 currentPos = MainCamera.gameObject.transform.position;
 		Vector2 deltaPos = targetPos - currentPos;
 
@@ -326,17 +325,17 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
-	void OnCollisionEnter2D(Collider2D Collsion)
+	void OnCollisionEnter2D(Collider2D Collider)
 	{
-		if (Collsion.gameObject.tag == "Prism")
+		if (Collider.gameObject.tag == "Prism")
 		{
 			IsOnPrism = true;
 		}
 	}
 
-	void OnCollisionExit2D(Collider2D Collsion)
+	void OnCollisionExit2D(Collider2D Collider)
 	{
-		if (Collsion.gameObject.tag == "Prism")
+		if (Collider.gameObject.tag == "Prism")
 		{
 			IsOnPrism = false;
 		}
