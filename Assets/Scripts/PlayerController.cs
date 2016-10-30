@@ -96,6 +96,12 @@ public class PlayerController : MonoBehaviour
 				//Camera.GetComponent<Transform> ().position = Vector3.MoveTowards (Camera.GetComponent<Transform> ().position, CamTargetPoint.position, step);
 			}
 
+            if (Input.GetKeyDown(KeyCode.N))
+            {
+                if (SceneManager.GetActiveScene().name == "1-1") SceneManager.LoadScene("1-2");
+                else if (SceneManager.GetActiveScene().name == "1-2") SceneManager.LoadScene("1-5");
+            }
+
 			if ((GoLeft || GoRight) && !WinGame)
 				GetComponent<Animator>().SetBool("IsWalk", true);
 			else
